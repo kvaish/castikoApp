@@ -5,9 +5,10 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { DropzoneModule } from 'angular2-dropzone-wrapper';
 import { DropzoneConfigInterface } from 'angular2-dropzone-wrapper';
+import { UploadVideoComponent } from './upload-video/upload-video.component';
 
 
-
+declare var cors_video_upload:any;
  
 const DROPZONE_CONFIG: DropzoneConfigInterface = {
   // Change this to your upload POST address: 
@@ -18,7 +19,8 @@ const DROPZONE_CONFIG: DropzoneConfigInterface = {
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    UploadVideoComponent
   ],
   imports: [
     BrowserModule,

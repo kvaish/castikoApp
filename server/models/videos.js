@@ -13,9 +13,10 @@ const VideoSchema = mongoose.Schema({
 		required:true
 	},
 	cast_dir_id:{
-		type:Number ,
-		required:true
+		type:Number
+		
 	}
 });
+
 
 const Video = module.exports = mongoose.model('Video',VideoSchema);

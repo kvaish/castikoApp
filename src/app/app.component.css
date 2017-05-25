@@ -1,3 +1,11 @@
-.dropzone, .dropzone * {
-  box-sizing: border-box;
-  height: 250px; }
+.dropzone.dz-wrapper .dz-message .dz-text {
+    padding: 70px !important;
+    text-align: center;
+}
+.dropzone.dz-wrapper .dz-preview {
+	width:auto !important;
+
+}
+.dropzone.dz-wrapper .dz-preview .dz-image img {
+	width:auto !important;
+}
