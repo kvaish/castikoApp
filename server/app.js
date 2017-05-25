@@ -4,6 +4,9 @@ var bodyParser = require('body-parser');
 var cors = require('cors');
 var path = require('path');
 
+
+
+
 var app = express();
 const port = 3000;
 app.use(bodyParser.json());
@@ -13,7 +16,7 @@ const route = require('./routes/routes');
 
 //connect to mongodb
 
-app.use('/api',route);
+app.use('/',route);
 app.use(cors());
 
 
@@ -24,7 +27,7 @@ mongoose.connection.on('connected',(err)=>{
 		console.log('Error');
 	}
 	else{
-		console.log('Connected');		
+		console.log('Connected');
 	}
 });
 

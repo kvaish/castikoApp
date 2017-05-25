@@ -3,18 +3,15 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
-import { DropzoneModule } from 'angular2-dropzone-wrapper';
+import { FileUploadModule } from 'ng2-file-upload';
+/*import { DropzoneModule } from 'angular2-dropzone-wrapper';
 import { DropzoneConfigInterface } from 'angular2-dropzone-wrapper';
-
-
-
- 
 const DROPZONE_CONFIG: DropzoneConfigInterface = {
-  // Change this to your upload POST address: 
+  // Change this to your upload POST address:
   server: 'https://httpbin.org/post',
   maxFilesize: 50,
-  acceptedFiles: 'video/*'
-};
+  acceptedFiles: 'image/*'
+};*/
 
 @NgModule({
   declarations: [
@@ -24,7 +21,8 @@ const DROPZONE_CONFIG: DropzoneConfigInterface = {
     BrowserModule,
     FormsModule,
     HttpModule,
-    DropzoneModule.forRoot(DROPZONE_CONFIG)
+    FileUploadModule
+    //DropzoneModule.forRoot(DROPZONE_CONFIG)
   ],
   providers: [],
   bootstrap: [AppComponent]
