@@ -1,0 +1,43 @@
+.example-container {
+    height: 100%;
+    width: inherit;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 6px;
+}
+.example-container ul{
+  padding-left: 10px;
+}
+.example-container ul li{
+ list-style-type: none;
+ padding: 10px 0px;
+
+}
+.example-container a{
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 2;
+  color: #8f8f90;
+
+}
+i{
+  padding-right: 15px; color: #4e4e4f;
+}
+.fa-info-circle{
+  float: right; padding-top: 4px;line-height: 2.5;color: #e8e8e8;
+}
+.example-sidenav-content {
+  display: flex;
+  top: 0;
+  font-size:24px;cursor:pointer;
+}
+
+.example-sidenav {
+  padding: 0px;
+  width: 90%;
+}

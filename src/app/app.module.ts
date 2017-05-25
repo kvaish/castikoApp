@@ -2,29 +2,29 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import {MdSidenavModule} from '@angular/material';
 import { AppComponent } from './app.component';
-import { FileUploadModule } from 'ng2-file-upload';
-/*import { DropzoneModule } from 'angular2-dropzone-wrapper';
-import { DropzoneConfigInterface } from 'angular2-dropzone-wrapper';
-const DROPZONE_CONFIG: DropzoneConfigInterface = {
-  // Change this to your upload POST address:
-  server: 'https://httpbin.org/post',
-  maxFilesize: 50,
-  acceptedFiles: 'image/*'
-};*/
+import { NavbarComponent } from './components/navbar/navbar.component';
+import {MdCardModule} from '@angular/material';
+import { UploadComponent } from './components/upload/upload.component';
+import { DropzoneModule } from 'angular2-dropzone-wrapper';
+//import { DropzoneConfigInterface } from 'angular2-dropzone-wrapper';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavbarComponent,
+    UploadComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    FileUploadModule
-    //DropzoneModule.forRoot(DROPZONE_CONFIG)
+    MdSidenavModule,
+    MdCardModule,
+    DropzoneModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, NavbarComponent]
 })
 export class AppModule { }

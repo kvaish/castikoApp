@@ -1,5 +1,5 @@
 {
-  "name": "castiko-app",
+  "name": "castiko",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
@@ -12,24 +12,21 @@
   },
   "private": true,
   "dependencies": {
+    "@angular/animations": "^4.1.3",
     "@angular/common": "^4.0.0",
     "@angular/compiler": "^4.0.0",
     "@angular/core": "^4.0.0",
     "@angular/forms": "^4.0.0",
     "@angular/http": "^4.0.0",
+    "@angular/material": "^2.0.0-beta.5",
     "@angular/platform-browser": "^4.0.0",
     "@angular/platform-browser-dynamic": "^4.0.0",
     "@angular/router": "^4.0.0",
-    "angular2-dropzone-wrapper": "^2.0.3",
     "bootstrap": "^3.3.7",
     "core-js": "^2.4.1",
-    "cors": "^2.8.3",
     "dropzone": "^4.3.0",
     "font-awesome": "^4.7.0",
-    "mongoose": "^4.10.1",
-    "multer": "^1.3.0",
-    "ng2-dragula": "^1.3.1",
-    "ng2-file-upload": "^1.2.1",
+    "hammerjs": "^2.0.8",
     "rxjs": "^5.1.0",
     "zone.js": "^0.8.4"
   },
@@ -52,16 +49,5 @@
     "ts-node": "~2.0.0",
     "tslint": "~4.5.0",
     "typescript": "~2.2.0"
-  },
-  "description": "This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.4.",
-  "main": "app.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kvaish/castikoApp.git"
-  },
-  "author": "",
-  "bugs": {
-    "url": "https://github.com/kvaish/castikoApp/issues"
-  },
-  "homepage": "https://github.com/kvaish/castikoApp#readme"
+  }
 }
