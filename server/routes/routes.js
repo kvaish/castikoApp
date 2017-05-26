@@ -6,7 +6,7 @@ var fs = require('fs');
 const Video = require('../models/videos');
 var DIR = './uploads/';
 
-<<<<<<< HEAD
+
 var video = new Video({video_desc:"kavita",video_link:'https://www.youtube.com/watch?v=FQS7i2z1CoA'});
 
 
@@ -29,7 +29,7 @@ router.get('/allvideos',function(req,res){
 });
 
 router.get('/insertvideo',function)
-=======
+
 var upload = multer({dest: DIR});
 
 
@@ -39,7 +39,7 @@ router.use('/uploads',function (req, res, next) {
   res.setHeader('Access-Control-Allow-Methods', 'POST');
   res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
   res.setHeader('Access-Control-Allow-Credentials', true);
->>>>>>> origin/kvaish
+
 
   next();
 });

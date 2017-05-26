@@ -9,36 +9,32 @@ import {MdCardModule} from '@angular/material';
 import { UploadComponent } from './components/upload/upload.component';
 import { DropzoneModule } from 'angular2-dropzone-wrapper';
 import { DropzoneConfigInterface } from 'angular2-dropzone-wrapper';
-<<<<<<< HEAD
+
 import { UploadVideoComponent } from './upload-video/upload-video.component';
 
 
 declare var cors_video_upload:any;
  
-=======
+
 import { DataTablesModule } from 'angular-datatables';
 
->>>>>>> origin/kvaish
+
 const DROPZONE_CONFIG: DropzoneConfigInterface = {
   // Change this to your upload POST address:
   server: 'https://httpbin.org/post',
   maxFilesize: 50,
-<<<<<<< HEAD
-  acceptedFiles: 'image/*'
-=======
-  acceptedFiles: 'videos/*'
->>>>>>> origin/kvaish
+
+  acceptedFiles: 'image/*',
+
 };
 
 @NgModule({
   declarations: [
     AppComponent,
-<<<<<<< HEAD
-    UploadVideoComponent
-=======
+    UploadVideoComponent,
     NavbarComponent,
     UploadComponent
->>>>>>> origin/kvaish
+
   ],
   imports: [
     BrowserModule,

@@ -9,12 +9,8 @@ import {ViewEncapsulation} from '@angular/core';
   encapsulation: ViewEncapsulation.None 
 })
 export class AppComponent {
-<<<<<<< HEAD
-  title = 'app works!';
-  onUploadSuccess($event){
 
-  }
-=======
   title = '';
->>>>>>> origin/kvaish
+  
+
 }
