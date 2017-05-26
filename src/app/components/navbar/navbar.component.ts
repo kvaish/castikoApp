@@ -8,9 +8,10 @@ import {MdIconModule} from '@angular/material';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-
-  constructor() { }
-  //private logo = '../../../public/images/logo.png'
+  //fullImagePath : String;
+  constructor() {
+    //this.fullImagePath = '../../assets/logo.png';
+  }
   ngOnInit() {
   }
 

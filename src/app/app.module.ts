@@ -8,7 +8,15 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import {MdCardModule} from '@angular/material';
 import { UploadComponent } from './components/upload/upload.component';
 import { DropzoneModule } from 'angular2-dropzone-wrapper';
-//import { DropzoneConfigInterface } from 'angular2-dropzone-wrapper';
+import { DropzoneConfigInterface } from 'angular2-dropzone-wrapper';
+import { DataTablesModule } from 'angular-datatables';
+
+const DROPZONE_CONFIG: DropzoneConfigInterface = {
+  // Change this to your upload POST address:
+  server: 'https://httpbin.org/post',
+  maxFilesize: 50,
+  acceptedFiles: 'videos/*'
+};
 
 @NgModule({
   declarations: [
@@ -23,6 +31,8 @@ import { DropzoneModule } from 'angular2-dropzone-wrapper';
     MdSidenavModule,
     MdCardModule,
     DropzoneModule,
+    DropzoneModule.forRoot(DROPZONE_CONFIG),
+    DataTablesModule
   ],
   providers: [],
   bootstrap: [AppComponent, NavbarComponent]

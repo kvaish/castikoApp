@@ -16,20 +16,19 @@
 .example-container ul li{
  list-style-type: none;
  padding: 10px 0px;
-
 }
 .example-container a{
   text-decoration: none;
   font-size: 18px;
   line-height: 2;
-  color: #8f8f90;
+  color: #4d4d4e;
 
 }
 i{
   padding-right: 15px; color: #4e4e4f;
 }
 .fa-info-circle{
-  float: right; padding-top: 4px;line-height: 2.5;color: #e8e8e8;
+  float: right; padding-top: 4px;line-height: 1.6;color: #e8e8e8;
 }
 .example-sidenav-content {
   display: flex;
@@ -40,4 +39,9 @@ i{
 .example-sidenav {
   padding: 0px;
   width: 90%;
+}
+
+.example-sidenav[_ngcontent-c4] {
+    padding: 0px;
+    width: 92% !important;
 }
