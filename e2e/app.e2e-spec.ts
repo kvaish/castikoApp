@@ -1,10 +1,10 @@
-import { CastikoAppPage } from './app.po';
+import { CastikoPage } from './app.po';
 
-describe('castiko-app App', () => {
-  let page: CastikoAppPage;
+describe('castiko App', () => {
+  let page: CastikoPage;
 
   beforeEach(() => {
-    page = new CastikoAppPage();
+    page = new CastikoPage();
   });
 
   it('should display message saying app works', () => {

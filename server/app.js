@@ -5,6 +5,9 @@ var cors = require('cors');
 var path = require('path');
 var youtube= require('./controllers/youtbe')
 
+
+
+
 var app = express();
 const port = 3000;
 app.use(bodyParser.json());
@@ -15,7 +18,11 @@ const Video = require('./models/videos');
 
 //connect to mongodb
 
+<<<<<<< HEAD
 
+=======
+app.use('/',route);
+>>>>>>> origin/kvaish
 app.use(cors());
 var myLogger = function(req,res,next){
 	console.log('Logger');
@@ -32,7 +39,7 @@ mongoose.connection.on('connected',(err)=>{
 		console.log('Error');
 	}
 	else{
-		console.log('Connected');		
+		console.log('Connected');
 	}
 });
 

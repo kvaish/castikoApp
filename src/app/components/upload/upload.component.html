@@ -1,0 +1,32 @@
+<script src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+<div class="container">
+  <div class="row">
+  <md-card>
+    <dropzone [config]="config" [message]="'Click or drag videos here to upload'" (error)="onUploadError($event)" (success)="onUploadSuccess($event)"></dropzone>
+  </md-card>
+  <md-card>
+    <table datatable class="row-border hover">
+        <thead>
+          <tr>
+            <th><input type="checkbox" /></th>
+            <th>Name</th>
+            <th>Scene 1</th>
+            <th>Scene 2</th>
+            <th>All Videos Added</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+    </table>
+  </md-card>
+</div>
+
+</div>

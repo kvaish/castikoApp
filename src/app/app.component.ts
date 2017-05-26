@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
 import {ViewEncapsulation} from '@angular/core';
 
-
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -11,8 +9,12 @@ import {ViewEncapsulation} from '@angular/core';
   encapsulation: ViewEncapsulation.None 
 })
 export class AppComponent {
+<<<<<<< HEAD
   title = 'app works!';
   onUploadSuccess($event){
 
   }
+=======
+  title = '';
+>>>>>>> origin/kvaish
 }

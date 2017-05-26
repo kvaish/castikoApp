@@ -1,6 +1,6 @@
 import { browser, by, element } from 'protractor';
 
-export class CastikoAppPage {
+export class CastikoPage {
   navigateTo() {
     return browser.get('/');
   }
