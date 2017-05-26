@@ -1,4 +1,18 @@
+<<<<<<< HEAD
 .container{
   width: inherit;
 }
 md-card-title{ text-align: center; color: #8f8f90; font-size: 28px; font-weight: bold;}
+=======
+.dropzone.dz-wrapper .dz-message .dz-text {
+    padding: 70px !important;
+    text-align: center;
+}
+.dropzone.dz-wrapper .dz-preview {
+	width:auto !important;
+
+}
+.dropzone.dz-wrapper .dz-preview .dz-image img {
+	width:auto !important;
+}
+>>>>>>> 700e0bff20b966b639aaf64e1817596b01446066
