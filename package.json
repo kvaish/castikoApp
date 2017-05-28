@@ -27,13 +27,18 @@
     "angular2-datatable": "^0.6.0",
     "bootstrap": "^3.3.7",
     "core-js": "^2.4.1",
+<<<<<<< HEAD
 
+=======
+    "cors": "^2.8.3",
+>>>>>>> origin/shubhamvohra
     "datatables.net": "^1.10.15",
     "datatables.net-dt": "^1.10.15",
     "dropzone": "^4.3.0",
     "font-awesome": "^4.7.0",
     "hammerjs": "^2.0.8",
     "jquery": "^3.2.1",
+<<<<<<< HEAD
 
     "cors": "^2.8.3",
     "mongoose": "^4.10.1",
@@ -43,6 +48,11 @@
 
 
 
+=======
+    "mongoose": "^4.10.1",
+    "ng2-dragula": "^1.3.1",
+    "nodemon": "^1.11.0",
+>>>>>>> origin/shubhamvohra
     "rxjs": "^5.1.0",
     "zone.js": "^0.8.4"
   },

@@ -14,6 +14,7 @@ import {ViewEncapsulation} from '@angular/core';
   encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
+<<<<<<< HEAD
 
   title = '';
 
@@ -24,5 +25,10 @@ export class AppComponent {
 
 
 
+=======
+
+  title = '';
+  
+>>>>>>> origin/shubhamvohra
 
 }

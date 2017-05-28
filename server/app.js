@@ -3,7 +3,13 @@ var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 var cors = require('cors');
 var path = require('path');
+<<<<<<< HEAD
 var youtube= require('./controllers/youtbe');
+=======
+
+
+
+>>>>>>> origin/shubhamvohra
 
 
 var app = express();
@@ -11,30 +17,30 @@ const port = 3000;
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname,'public')));
-const route = require('./routes/routes');
+const route = require('./controllers/roles');
 const Video = require('./models/videos');
 
 //connect to mongodb
 
 
 
+<<<<<<< HEAD
 app.use('/',route);
 
 
 
+=======
+>>>>>>> origin/shubhamvohra
 
 
 
 app.use(cors());
-var myLogger = function(req,res,next){
-	console.log('Logger');
-	next();
-}
 
-app.use(myLogger);
+
+
 app.use('/api',route);
 
-mongoose.connect('mongodb://localhost:27017/castiko');
+mongoose.connect('mongodb://localhost:27017/castikoApp');
 
 mongoose.connection.on('connected',(err)=>{
 	if(err){
@@ -45,16 +51,6 @@ mongoose.connection.on('connected',(err)=>{
 	}
 });
 
-app.route('/book')
-  .get(function (req, res) {
-    res.send('Get a random book')
-  })
-  .post(function (req, res) {
-    res.send('Add a book')
-  })
-  .put(function (req, res) {
-    res.send('Update the book')
-  });
 
 app.get('/',function(req,res){
 	res.send('Hello Express');

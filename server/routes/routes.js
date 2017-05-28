@@ -7,6 +7,7 @@ const Video = require('../models/videos');
 var DIR = './uploads/';
 
 
+<<<<<<< HEAD
 
 var upload = multer({dest: DIR});
 
@@ -20,6 +21,8 @@ router.use('/uploads',function (req, res, next) {
 
 var video = new Video({video_desc:"kavita",video_link:'https://www.youtube.com/watch?v=FQS7i2z1CoA'});
 
+=======
+>>>>>>> origin/shubhamvohra
 var video = new Video({video_desc:"kavita",video_link:'https://www.youtube.com/watch?v=FQS7i2z1CoA'});
 
 
@@ -42,6 +45,7 @@ router.get('/allvideos',function(req,res){
 });
 
 router.get('/insertvideo',function)
+<<<<<<< HEAD
 
 
 
@@ -64,6 +68,18 @@ router.get('/allvideos',function(req,res){
 });
 
 router.get('/insertvideo',function)
+=======
+
+var upload = multer({dest: DIR});
+
+
+router.use('/uploads',function (req, res, next) {
+  res.setHeader('Content-Type', 'application/x-www-form-urlencoded');
+  res.setHeader('Access-Control-Allow-Origin', 'http://localhost:4200');
+  res.setHeader('Access-Control-Allow-Methods', 'POST');
+  res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
+  res.setHeader('Access-Control-Allow-Credentials', true);
+>>>>>>> origin/shubhamvohra
 
 
   next();
