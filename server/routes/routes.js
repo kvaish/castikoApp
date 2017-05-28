@@ -6,8 +6,8 @@ var fs = require('fs');
 const Video = require('../models/videos');
 var DIR = './uploads/';
 
-<<<<<<< HEAD
-<<<<<<< HEAD
+
+
 var upload = multer({dest: DIR});
 
 
@@ -17,9 +17,9 @@ router.use('/uploads',function (req, res, next) {
   res.setHeader('Access-Control-Allow-Methods', 'POST');
   res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
   res.setHeader('Access-Control-Allow-Credentials', true);
-=======
+
 var video = new Video({video_desc:"kavita",video_link:'https://www.youtube.com/watch?v=FQS7i2z1CoA'});
-=======
+
 var video = new Video({video_desc:"kavita",video_link:'https://www.youtube.com/watch?v=FQS7i2z1CoA'});
 
 
@@ -42,7 +42,7 @@ router.get('/allvideos',function(req,res){
 });
 
 router.get('/insertvideo',function)
->>>>>>> origin/shubhamvohra
+
 
 
 router.get('/print',function(req,res){
@@ -64,7 +64,7 @@ router.get('/allvideos',function(req,res){
 });
 
 router.get('/insertvideo',function)
->>>>>>> 700e0bff20b966b639aaf64e1817596b01446066
+
 
   next();
 });

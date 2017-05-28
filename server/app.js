@@ -3,13 +3,8 @@ var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 var cors = require('cors');
 var path = require('path');
-var youtube= require('./controllers/youtbe')
-<<<<<<< HEAD
+var youtube= require('./controllers/youtbe');
 
-
-
-=======
->>>>>>> origin/shubhamvohra
 
 var app = express();
 const port = 3000;
@@ -21,15 +16,15 @@ const Video = require('./models/videos');
 
 //connect to mongodb
 
-<<<<<<< HEAD
-<<<<<<< HEAD
+
+
 app.use('/',route);
-=======
 
->>>>>>> 700e0bff20b966b639aaf64e1817596b01446066
-=======
 
->>>>>>> origin/shubhamvohra
+
+
+
+
 app.use(cors());
 var myLogger = function(req,res,next){
 	console.log('Logger');
