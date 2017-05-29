@@ -9,6 +9,8 @@ import {MdCardModule} from '@angular/material';
 import { UploadComponent } from './components/upload/upload.component';
 import { DropzoneModule } from 'angular2-dropzone-wrapper';
 import { DropzoneConfigInterface } from 'angular2-dropzone-wrapper';
+import { DragulaModule } from 'ng2-dragula';
+
 
 import { UploadVideoComponent } from './upload-video/upload-video.component';
 
@@ -44,7 +46,8 @@ const DROPZONE_CONFIG: DropzoneConfigInterface = {
     MdCardModule,
     DropzoneModule,
     DropzoneModule.forRoot(DROPZONE_CONFIG),
-    DataTablesModule
+    DataTablesModule,
+     DragulaModule
   ],
   providers: [],
   bootstrap: [AppComponent, NavbarComponent]
