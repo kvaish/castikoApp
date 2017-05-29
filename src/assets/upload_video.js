@@ -50,8 +50,8 @@ UploadVideo.prototype.ready = function(accessToken) {
   this.accessToken = accessToken;
   this.gapi = gapi;
   this.authenticated = true;
-  
-  
+
+
   this.gapi.client.request({
     path: '/youtube/v3/channels',
     params: {
@@ -62,8 +62,8 @@ UploadVideo.prototype.ready = function(accessToken) {
       if (response.error) {
         console.log(response.error.message);
       } else {
-        $('#channel-name').text(response.items[0].snippet.title);
-        $('#channel-thumbnail').attr('src', response.items[0].snippet.thumbnails.default.url);
+        //$('#channel-name').text(response.items[0].snippet.title);
+        //$('#channel-thumbnail').attr('src', response.items[0].snippet.thumbnails.default.url);
 
         $('.pre-sign-in').hide();
         $('.post-sign-in').show();
@@ -80,15 +80,16 @@ UploadVideo.prototype.ready = function(accessToken) {
  * @param {object} file File object corresponding to the video to upload.
  */
 UploadVideo.prototype.uploadFile = function(file) {
+  var name = file.name;
   var metadata = {
     snippet: {
-      title: $('#title').val(),
-      description: $('#description').text(),
+      title: name,
+      //description: $('#description').text(),
       tags: this.tags,
       categoryId: this.categoryId
     },
     status: {
-      privacyStatus: $('#privacy-status option:selected').text()
+      privacyStatus: 'public'
     }
   };
   var uploader = new MediaUploader({
@@ -136,6 +137,7 @@ UploadVideo.prototype.uploadFile = function(file) {
       this.videoId = uploadResponse.id;
       $('#video-id').text(this.videoId);
       $('.post-upload').show();
+      $('.post-sign-in').hide();
       this.pollForVideoStatus();
     }.bind(this)
   });
@@ -146,10 +148,18 @@ UploadVideo.prototype.uploadFile = function(file) {
 
 UploadVideo.prototype.handleUploadClicked = function() {
   $('#button').attr('disabled', true);
-  this.uploadFile($('#file').get(0).files[0]);
+  //alert($('#file').get(0).files.length);
+  var length = $('#file').get(0).files.length;
+  for(var i =0; i< length; i++){
+    console.log($('#file').get(0).files[i].name);
+    this.uploadFile($('#file').get(0).files[i]);
+    setTimeout(function(){ console.log('slept'); }, 3000);
+  }
+//  this.uploadFile($('#file').get(0).files[0]);
 };
-
+var i = 1;
 UploadVideo.prototype.pollForVideoStatus = function() {
+
   this.gapi.client.request({
     path: '/youtube/v3/videos',
     params: {
@@ -171,14 +181,18 @@ UploadVideo.prototype.pollForVideoStatus = function() {
             break;
           // The video was successfully transcoded and is available.
           case 'processed':
-            $('#player').append(response.items[0].player.embedHtml);
+            $('#player').append('<div id="iframe'+i+'">'+response.items[0].player.embedHtml+'</div>');
+            i++;
+            console.log(response.items[0].player.embedHtml);
             $('#post-upload-status').append('<li>Final status.</li>');
+            //setTimeout(this.pollForVideoStatus.bind(this), STATUS_POLLING_INTERVAL_MILLIS);
             break;
           // All other statuses indicate a permanent transcoding failure.
           default:
             $('#post-upload-status').append('<li>Transcoding failed.</li>');
             break;
         }
+
       }
     }.bind(this)
   });
