@@ -1,3 +1,5 @@
+ 
+
 .dropzone.dz-wrapper .dz-message .dz-text {
     padding: 80px !important;
     text-align: center;
@@ -19,6 +21,7 @@ md-card{
   float: right;
 }
 
+<<<<<<< HEAD
 .upload{
   float: right !important;
   margin-top: 15px !important;
@@ -60,4 +63,37 @@ iframe{
 
 #player div{
 float: left;
+=======
+iframe body img{
+	max-width: 100% !important; max-height: 100% !important;
+}
+
+/* Draggable*/
+
+.drag-border {
+    border: #ff525b dashed 2px;
+}
+
+.drag-handle {
+    cursor: move; /* fallback if grab cursor is unsupported */
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+}
+
+.drag-handle:active { 
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}
+
+/* Droppable */
+
+.drag-hint-border {
+    border: #3c763d dashed 2px;
+}
+
+.drag-over-border {
+    border: #fbbc05 dashed 2px;
+>>>>>>> origin/shubhamvohra
 }

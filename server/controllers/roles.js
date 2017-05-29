@@ -1,4 +1,3 @@
-
 var Roles=require('../models/roles.js');
 var assert=require("assert");
 var express = require('express');
@@ -25,7 +24,7 @@ router.post('/editRoles',(req,res,next)=>{
 			console.log(err);
 		}
 		else{
-			console.log("Done.Reult updated");
+			console.log("Done.Result updated");
 		}
 
 	});

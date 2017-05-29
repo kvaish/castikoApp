@@ -42,10 +42,23 @@
         </thead>
         <tbody>
           <tr *ngFor="let role of roles">
-            <td>{{role.name}}</td>
-            <td ></td>
-            <td ></td>
-            <td ></td>
+            <td></td>
+            <td >{{role.name}} </td>
+            <td >
+              <div class="wrapper">
+                <div class="container" [dragula]='"fifth-bag"'>
+                   <div>
+                      <iframe width="150" height="100"  scrolling="no" style="" [src]="youtube(role.youtubelink)" frameborder="0" allowfullscreen > </iframe>
+                   </div>
+                </div>
+              </div>
+            </td>
+            <td>
+             
+                <div [dragula]='"fifth-bag"'>
+                  wiefiwuefi                </div>
+             
+            </td>
             <td></td>
           </tr>
         </tbody>
@@ -53,3 +66,4 @@
   </md-card>
 
 </div>
+

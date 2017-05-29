@@ -9,9 +9,18 @@ import {MdCardModule} from '@angular/material';
 import { UploadComponent } from './components/upload/upload.component';
 import { DropzoneModule } from 'angular2-dropzone-wrapper';
 import { DropzoneConfigInterface } from 'angular2-dropzone-wrapper';
+<<<<<<< HEAD
 import {UploadVideoComponent} from './upload-video/upload-video.component';
 import {MdProgressBarModule} from '@angular/material';
 import { DataTablesModule } from 'angular-datatables';
+=======
+import { DragulaModule } from 'ng2-dragula';
+
+
+import { UploadVideoComponent } from './upload-video/upload-video.component';
+
+
+>>>>>>> origin/shubhamvohra
 declare var cors_video_upload:any;
 
 
@@ -44,7 +53,11 @@ const DROPZONE_CONFIG: DropzoneConfigInterface = {
     DropzoneModule,
     DropzoneModule.forRoot(DROPZONE_CONFIG),
     DataTablesModule,
+<<<<<<< HEAD
     MdProgressBarModule
+=======
+     DragulaModule
+>>>>>>> origin/shubhamvohra
   ],
   providers: [],
   bootstrap: [AppComponent, NavbarComponent]
