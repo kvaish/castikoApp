@@ -3,9 +3,13 @@ var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 var cors = require('cors');
 var path = require('path');
+<<<<<<< HEAD
+var youtube= require('./controllers/youtbe');
+=======
 
 
 
+>>>>>>> origin/shubhamvohra
 
 
 var app = express();
@@ -20,6 +24,13 @@ const Video = require('./models/videos');
 
 
 
+<<<<<<< HEAD
+app.use('/',route);
+
+
+
+=======
+>>>>>>> origin/shubhamvohra
 
 
 
