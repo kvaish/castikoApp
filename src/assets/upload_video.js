@@ -153,7 +153,7 @@ UploadVideo.prototype.handleUploadClicked = function() {
   for(var i =0; i< length; i++){
     console.log($('#file').get(0).files[i].name);
     this.uploadFile($('#file').get(0).files[i]);
-    setTimeout(function(){ console.log('slept'); }, 3000);
+    
   }
 //  this.uploadFile($('#file').get(0).files[0]);
 };

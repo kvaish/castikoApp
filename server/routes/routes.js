@@ -6,13 +6,13 @@ var fs = require('fs');
 const Video = require('../models/videos');
 var DIR = './uploads/';
 
-<<<<<<< HEAD
+
 
 
 var upload = multer({dest: DIR});
-=======
 
-<<<<<<< HEAD
+
+
 
 var upload = multer({dest: DIR});
 
@@ -26,8 +26,8 @@ router.use('/uploads',function (req, res, next) {
 
 var video = new Video({video_desc:"kavita",video_link:'https://www.youtube.com/watch?v=FQS7i2z1CoA'});
 
-=======
->>>>>>> origin/shubhamvohra
+
+
 var video = new Video({video_desc:"kavita",video_link:'https://www.youtube.com/watch?v=FQS7i2z1CoA'});
 
 
@@ -50,7 +50,7 @@ router.get('/allvideos',function(req,res){
 });
 
 router.get('/insertvideo',function)
-<<<<<<< HEAD
+
 
 
 
@@ -73,7 +73,7 @@ router.get('/allvideos',function(req,res){
 });
 
 router.get('/insertvideo',function)
-=======
+
 
 var upload = multer({dest: DIR});
 
@@ -84,7 +84,7 @@ router.use('/uploads',function (req, res, next) {
   res.setHeader('Access-Control-Allow-Methods', 'POST');
   res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
   res.setHeader('Access-Control-Allow-Credentials', true);
->>>>>>> origin/shubhamvohra
+
 
 
   next();
@@ -111,7 +111,7 @@ router.get('/uploads', function(req, res){
   res.send('bshdfghjdfsgjsfk');
 });
 
->>>>>>> 205071e815502748c999623cbf8c5ec93f883a68
+
 
 
 
