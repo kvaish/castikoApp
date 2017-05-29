@@ -10,7 +10,7 @@ export class UploadService {
 
   //get details of all roles
   getRoles(){
-   return this.http.get('./api/roles')
+   return this.http.get('http://localhost:3000/api/getRoles')
    .map(res=>res.json());
   }
 

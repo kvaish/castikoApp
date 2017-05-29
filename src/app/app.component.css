@@ -1,4 +1,46 @@
+<<<<<<< HEAD
+=======
+
+<<<<<<< HEAD
+
+>>>>>>> 205071e815502748c999623cbf8c5ec93f883a68
 .container{
   width: inherit;
 }
 md-card-title{ text-align: center; color: #8f8f90; font-size: 28px; font-weight: bold;}
+<<<<<<< HEAD
+=======
+
+
+
+=======
+>>>>>>> origin/shubhamvohra
+.dropzone.dz-wrapper .dz-message .dz-text {
+    padding: 70px !important;
+    text-align: center;
+}
+.dropzone.dz-wrapper .dz-preview {
+	width:auto !important;
+
+}
+.dropzone.dz-wrapper .dz-preview .dz-image img {
+	width:auto !important;
+
+}
+
+<<<<<<< HEAD
+
+}
+=======
+.container{
+  width: inherit;
+}
+md-card-title{ 
+	text-align: center;
+	color: #8f8f90;
+	font-size: 28px; 
+	font-weight: bold;
+}
+>>>>>>> origin/shubhamvohra
+
+>>>>>>> 205071e815502748c999623cbf8c5ec93f883a68

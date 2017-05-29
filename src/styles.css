@@ -2,9 +2,21 @@
 @import "https://fonts.googleapis.com/icon?family=Material+Icons";
 /*@import '~@angular/material/prebuilt-themes/indigo-pink.css';*/
 #navbar{
+<<<<<<< HEAD
   width: 22%;
+=======
+
+  width: 20%;
+>>>>>>> 205071e815502748c999623cbf8c5ec93f883a68
 }
+
 #main{
+<<<<<<< HEAD
   width: 85%;
+=======
+
+  width:85%;
+>>>>>>> 205071e815502748c999623cbf8c5ec93f883a68
   float: right;
+  
 }
