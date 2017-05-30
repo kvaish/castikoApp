@@ -13,22 +13,7 @@ import {ViewEncapsulation} from '@angular/core';
 
   encapsulation: ViewEncapsulation.None
 })
-export class AppComponent {
-<<<<<<< HEAD
+export class AppComponent { 
 
-  title = '';
-
-  title = 'app works!';
-  onUploadSuccess($event){
-
-  }
-
-
-
-=======
-
-  title = '';
-  
->>>>>>> origin/shubhamvohra
 
 }

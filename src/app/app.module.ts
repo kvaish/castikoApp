@@ -12,11 +12,11 @@ import { DropzoneConfigInterface } from 'angular2-dropzone-wrapper';
 import { DragulaModule } from 'ng2-dragula';
 
 
-<<<<<<< HEAD
 
-import { DataTablesModule } from 'angular-datatables';
-=======
->>>>>>> origin/shubhamvohra
+
+
+
+
 import { UploadVideoComponent } from './upload-video/upload-video.component';
 
 
@@ -24,12 +24,12 @@ import { UploadVideoComponent } from './upload-video/upload-video.component';
 
 
 declare var cors_video_upload:any;
-<<<<<<< HEAD
-=======
+
+
  
 
 import { DataTablesModule } from 'angular-datatables';
->>>>>>> origin/shubhamvohra
+
 
 
 const DROPZONE_CONFIG: DropzoneConfigInterface = {
@@ -37,28 +37,26 @@ const DROPZONE_CONFIG: DropzoneConfigInterface = {
   server: 'https://httpbin.org/post',
   maxFilesize: 50,
 
-<<<<<<< HEAD
 
-  acceptedFiles: 'videos/*'
-=======
+
+ 
+
   acceptedFiles: 'image/*',
 
->>>>>>> origin/shubhamvohra
+
 };
 
 @NgModule({
   declarations: [
     AppComponent,
-<<<<<<< HEAD
+
     NavbarComponent,
     UploadComponent,
-    UploadVideoComponent
-=======
     UploadVideoComponent,
     NavbarComponent,
     UploadComponent
 
->>>>>>> origin/shubhamvohra
+
   ],
   imports: [
     BrowserModule,

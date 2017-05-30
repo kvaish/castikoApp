@@ -1,6 +1,3 @@
-
-<<<<<<< HEAD
-
 .container{
   width: inherit;
 }
@@ -8,8 +5,8 @@ md-card-title{ text-align: center; color: #8f8f90; font-size: 28px; font-weight:
 
 
 
-=======
->>>>>>> origin/shubhamvohra
+
+
 .dropzone.dz-wrapper .dz-message .dz-text {
     padding: 70px !important;
     text-align: center;
@@ -22,11 +19,6 @@ md-card-title{ text-align: center; color: #8f8f90; font-size: 28px; font-weight:
 	width:auto !important;
 
 }
-
-<<<<<<< HEAD
-
-}
-=======
 .container{
   width: inherit;
 }
@@ -36,5 +28,5 @@ md-card-title{
 	font-size: 28px; 
 	font-weight: bold;
 }
->>>>>>> origin/shubhamvohra
+
 
